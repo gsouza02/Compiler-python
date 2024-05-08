@@ -62,8 +62,6 @@ def lexer(code):
                                 token_type = reserved_simbols.get(verificaIguais, 'SIMBOLO')
                                 if(token_type != 'SIMBOLO'):
                                     tokens.append((token_type, verificaIguais))
-                                token_type = reserved_simbols.get(segundoChar, 'SIMBOLO')
-                                tokens.append((token_type, segundoChar))
                                 primeiroChar = ''
                                 verificaIguais = ''
                                 segundoChar = ''
